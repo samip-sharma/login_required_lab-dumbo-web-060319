@@ -1,0 +1,7 @@
+your name:<%= session[:name] %>
+
+<%= button_to "secret", '/secrets/show', method: :get %>
+
+<%= form_tag method: :delete ,action: "destroy" ,controller:"sessions" do %>
+<%= submit_tag "delete" %>
+<% end %>
